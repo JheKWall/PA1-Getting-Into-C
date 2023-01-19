@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace PA1_JKW_352
 {
-    class Program
+    class World
     {
-        static void Main(string[] args)
-        {
-            
-        }
     }
 }

@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace PA1_JKW_352
 {
-    class Program
+    class Cat
     {
-        static void Main(string[] args)
-        {
-            
-        }
     }
 }
