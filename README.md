@@ -1,5 +1,14 @@
 # Programming Assignment 1: Getting into C#
 
+
+## Usage
+
+1. Download ZIP File (see latest release)
+2. Extract ZIP
+3. Run the unzipped .exe file ("PA1-JKW-352.exe")
+
+
+
 ## Description
 An animal management program.
 
