@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace PA1_JKW_352
 {
-    public class Animal
+    public abstract class Animal
     {
         // Name of the animal
         private string name;
@@ -25,90 +25,61 @@ namespace PA1_JKW_352
         // Weight of the animal (lbs)
         private float weight;
 
-        //Constructor
-        public Animal()
-        {
-            setNoise("Greetings my good sir.");
-
-            setName("Bartholomew");
-            setAge(30);
-            setWeight(170f);
-        }
-
-        //Paramaterized Constructor
-        public Animal(string name, int age, float weight)
-        {
-            setNoise("Greetings my good sir.");
-
-            setName(name);
-            setAge(age);
-            setWeight(weight);
-        }
-
         //Method to print all of the animal's information
         //Prints animal information to console.
-        public void printInfo()
-        {
-            Console.WriteLine("- Name: " + name + "\n- Age: " + age + "\n- Weight: " + weight + "\n");
-        }
+        public abstract void printInfo();
 
         //Method to make the animal make a noise
         //Prints animal's noise to console.
-        public void makeNoise()
-        {
-            Console.WriteLine(name + " says: \"" + noise + "\"\n");
-        }
+        public abstract void makeNoise();
 
         //Method to increment animal's age by one.
-        public void ageUp()
-        {
-            age++;
-        }
+        public abstract void ageUp();
 
         //Name Accessor
-        public string getName()
+        protected string getName()
         {
             return name;
         }
 
         //Name Mutator
-        public void setName(string name)
+        protected void setName(string name)
         {
             this.name = name;
         }
 
         //Age Accessor
-        public int getAge()
+        protected int getAge()
         {
             return age;
         }
 
         //Age Mutator
-        public void setAge(int age)
+        protected void setAge(int age)
         {
             this.age = age;
         }
-        
+
         //Noise Accessor
-        public string getNoise()
+        protected string getNoise()
         {
             return noise;
         }
 
         //Noise Mutator
-        public void setNoise(string noise)
+        protected void setNoise(string noise)
         {
             this.noise = noise;
         }
 
         //Weight Getter
-        public float getWeight()
+        protected float getWeight()
         {
             return weight;
         }
 
         //Weight Setter
-        public void setWeight(float weight)
+        protected void setWeight(float weight)
         {
             this.weight = weight;
         }

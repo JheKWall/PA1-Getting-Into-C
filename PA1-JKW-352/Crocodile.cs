@@ -15,16 +15,6 @@ namespace PA1_JKW_352
 {
     public class Crocodile : Animal
     {
-        //Crocodile Default Constructor
-        Crocodile()
-        {
-            setNoise("Snarl.");
-
-            setName("Cid the Crocodile");
-            setAge(45);
-            setWeight(1900f);
-        }
-
         //Crocodile Paramaterized Constructor
         public Crocodile(string name, int age, float weight)
         {
@@ -33,6 +23,26 @@ namespace PA1_JKW_352
             setName(name);
             setAge(age);
             setWeight(weight);
+        }
+
+        //Method to print all of the animal's information
+        //Prints animal information to console.
+        public override void printInfo()
+        {
+            Console.WriteLine("- Name: " + getName() + "\n- Age: " + getAge() + "\n- Weight: " + getWeight() + "\n");
+        }
+
+        //Method to make the animal make a noise
+        //Prints animal's noise to console.
+        public override void makeNoise()
+        {
+            Console.WriteLine(getName() + " says: \"" + getNoise() + "\"\n");
+        }
+
+        //Method to increment animal's age by one.
+        public override void ageUp()
+        {
+            setAge(getAge() + 1);
         }
     }
 }
