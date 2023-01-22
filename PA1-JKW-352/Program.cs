@@ -17,6 +17,7 @@ namespace PA1_JKW_352
     {
         static void Main(string[] args)
         {
+            //Initialize a world object
             World world = new World();
 
             //Calling upon the power of The World class

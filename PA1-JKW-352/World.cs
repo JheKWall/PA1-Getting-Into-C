@@ -15,8 +15,10 @@ namespace PA1_JKW_352
 {
     class World
     {
+        //Animal List that holds all animals
         List<Animal> animalList = new List<Animal>();
 
+        //User Interface Menu
         public void animalMenu()
         {
             int userInput = 0;
@@ -72,6 +74,8 @@ namespace PA1_JKW_352
 
         }
 
+        //Lists all animals currently stored in animalList()
+        //If no animals are currently held, exits early
         private void listAnimals()
         {
             //Exit if theres no animals yet
@@ -93,6 +97,8 @@ namespace PA1_JKW_352
             }
         }
 
+        //Allows you to add an animal from the 3 hard-coded concrete classes (Cassowary, Cat, Crocodile)
+        //Asks user for name, age, and weight. (Noise stays the same for each species)
         private void addAnimal()
         {
             int userInput = 0;
@@ -149,6 +155,8 @@ namespace PA1_JKW_352
             }
         }
 
+        //Lets user choose an animal to remove from the list
+        //If no animals are currently held, exits early; also exits if user inputs invalid choice
         private void removeAnimal()
         {
             //Exit if theres no animals yet
@@ -177,6 +185,9 @@ namespace PA1_JKW_352
             }
         }
 
+        //Lets user find an animal from 1 of 3 criteria (name, age, weight)
+        //Tells user if there are no animals with inputted data
+        //If no animals are currently held, exits early
         private void findAnimal()
         {
             //Exit if theres no animals yet
@@ -260,6 +271,8 @@ namespace PA1_JKW_352
             }
         }
 
+        //Plays the noise a specific animal makes
+        //If no animals are currently held, exits early
         private void playAnimalNoise()
         {
             //Exit if theres no animals yet
@@ -287,6 +300,8 @@ namespace PA1_JKW_352
 
         }
 
+        //Increments an animal's age by 1
+        //If no animals are currently held, exits early
         private void ageUpAnimal()
         {
             //Exit if theres no animals yet

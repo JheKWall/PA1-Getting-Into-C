@@ -46,12 +46,14 @@ namespace PA1_JKW_352
         }
 
         //Method to print all of the animal's information
+        //Prints animal information to console.
         public void printInfo()
         {
             Console.WriteLine("- Name: " + name + "\n- Age: " + age + "\n- Weight: " + weight + "\n");
         }
 
         //Method to make the animal make a noise
+        //Prints animal's noise to console.
         public void makeNoise()
         {
             Console.WriteLine(name + " says: \"" + noise + "\"\n");
